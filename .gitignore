@@ -1,14 +1,10 @@
 node_modules/
 dist/
 .playwright-mcp/
-
-# Root-level loose files (not product images)
 *.webm
 *.mp4
 record-demo.mjs
 desktop.ini
-
-# Root loose images (real product images live in public/images/)
 /*.png
 /*.jpg
 /*.jpeg
