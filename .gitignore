@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.playwright-mcp/
+*.webm
+*.mp4
+record-demo.mjs
+desktop.ini
+/*.png
+/*.jpg
+/*.jpeg
