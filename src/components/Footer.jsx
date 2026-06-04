@@ -12,9 +12,9 @@ export default function Footer() {
     <footer style={{ background:C.canvas, borderTop:`1px solid ${C.hairline}`, padding:'clamp(32px,4vw,48px) clamp(16px,4vw,40px) clamp(20px,3vw,28px)' }}>
       <div style={{ maxWidth:1440, margin:'0 auto' }}>
         <div className="footer-grid">
-          <div>
+          <div className="footer-col-brand">
             <div style={{ fontWeight:700, fontSize:17, letterSpacing:'0.07em', marginBottom:12 }}>VELA</div>
-            <p style={{ fontSize:13, color:C.mute, lineHeight:1.75, maxWidth:200, marginBottom:18 }}>
+            <p style={{ fontSize:13, color:C.mute, lineHeight:1.75, maxWidth:220, marginBottom:18 }}>
               Everything you need, from verified sellers worldwide. Fashion, tech, beauty and more.
             </p>
             <div style={{ display:'flex', gap:8 }}>
@@ -37,9 +37,10 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div style={{ borderTop:`1px solid ${C.hairline}`, paddingTop:20, display:'flex', justifyContent:'space-between', alignItems:'center' }}>
+
+        <div style={{ borderTop:`1px solid ${C.hairline}`, paddingTop:20, display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:8 }}>
           <span style={{ fontSize:11, color:C.stone }}>© 2025 VELA Marketplace, Inc.</span>
-          <div style={{ display:'flex', gap:18 }}>
+          <div style={{ display:'flex', gap:18, flexWrap:'wrap' }}>
             {['Privacy','Terms','Cookies','Accessibility'].map(l => (
               <a key={l} href="#" style={{ fontSize:11, color:C.stone, transition:'color 0.15s' }}
                 onMouseEnter={e => e.currentTarget.style.color=C.ink}
